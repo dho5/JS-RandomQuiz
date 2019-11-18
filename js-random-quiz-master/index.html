@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Random Quiz</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div>
+      <h1>RANDOM QUIZ</h1>
+      <hr />
+
+      <h2>Question 1</h2>
+      <p>What country uses the flag below? <a href="">(HINT)</a></p>
+      <img src="pictures/CanadianFlag.svg" alt="Canadian Flag" width="345px" />
+      <p><em>Answer: </em><input id='firstInput' type="text" /></p>
+      <p id='firstFeedback'></p>
+      <hr />
+
+      <h2>Question 2</h2>
+      <p>Which of the following is <b>not</b> a piece used in Chess?</p>
+      <ol>
+        <li>Pawn</li>
+        <li>Knight</li>
+        <li>Cardinal</li>
+        <li>Rook</li>
+        <li>Queen</li>
+        <li>King</li>
+      </ol>
+      <p><em>Answer: </em><input id='secondInput' type="text" /></p>
+      <p id='secondFeedback'></p>
+      <hr />
+
+      <h2>Question 3</h2>
+      <p>
+        Who is Po <em>(The Kung Fu Panda)</em> scared of in this audio clip?
+      </p>
+      <img src="pictures/Po.png" alt="Picture of Po" width="260px" />
+      <p>
+        <audio controls>
+          <source src="media/kung-fu-panda.mp3" type="audio/mpeg" />
+          Your browser does not support the audio tag.
+        </audio>
+      </p>
+      <p><em>Answer: </em><input id='thirdInput' type="text" /></p>
+      <p id='thirdFeedback'></p>
+      <hr>
+      
+      <h2>Question 4</h2>
+      <p>What is the most expensive dog breed? <a href="https://www.gobankingrates.com/saving-money/pets/most-expensive-dog-breeds/#8">(HINT)</a></p>
+      <ol>
+        <li>Tibetan Mastiff</li>
+        <li>Golden Retriever</li>
+        <li>German Shepherd</li>
+        <li>Yorkshire Terrier</li>
+      </ol>
+      <p>Answer: <input id='fourthInput' type="text"></p>
+      <p id='fourthFeedback'></p>
+      <hr>
+
+			<h2>Results</h2>
+      <p><button id='markBtn'>Mark Quiz</button> <span id='markResult'>----</span></p>
+      <p id='thankYou'>----</p>
+    </div>
+
+    <!-- Load JavaScript -->
+    <script src='main.js'></script>
+  </body>
+</html>
